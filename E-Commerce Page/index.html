@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunglasses Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">sunglasses</div>
+        <nav>
+            <ul>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="user-controls">
+            <div class="cart">🛒</div>
+            <div class="user">👤</div>
+        </div>
+    </header>
+
+    <div class="product-container">
+        <div class="product-gallery">
+            <img id="main-image" src="https://smhttp-ssl-47739.nexcesscdn.net/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/w/f/wf01purplea-110518.jpg" alt="Sunglasses">
+            <div class="thumbnails">
+                <img onclick="changeImage('sunglasses1.jpg')" src="https://smhttp-ssl-47739.nexcesscdn.net/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/w/f/wf01purplea-110518.jpg" alt="Thumbnail 1">
+                <img onclick="changeImage('sunglasses2.jpg')" src="https://cdn11.bigcommerce.com/s-fbzg2euwpa/images/stencil/1280x1280/products/113/576/Violet_1__90586.1642292970.jpg?c=1" alt="Thumbnail 2">
+                <img onclick="changeImage('sunglasses3.jpg')" src="https://cdn11.bigcommerce.com/s-fbzg2euwpa/products/147/images/639/Purple_x_Green_AIR_FIT_Polarized_Sunnies__69057.1658067061.386.513.png?c=1" alt="Thumbnail 3">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h1>Sleek Sunglasses</h1>
+            <p class="company">SUNGLASSES COMPANY</p>
+            <p class="price">
+                <span class="current-price">$49.99</span>
+                <span class="old-price">$99.99</span>
+                <span class="discount">50% OFF</span>
+            </p>
+            <p class="description">
+                These sleek and stylish sunglasses are perfect for any occasion. Made with durable materials and offering UV protection, they are both fashionable and functional.
+            </p>
+            <div class="quantity-selector">
+                <button onclick="decreaseQuantity()">-</button>
+                <input type="number" id="quantity" value="1" min="1">
+                <button onclick="increaseQuantity()">+</button>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
